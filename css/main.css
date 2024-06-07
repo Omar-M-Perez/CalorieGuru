@@ -1,0 +1,99 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+/* Main CSS */
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+    font-family: "Krona One", sans-serif;
+}
+
+nav, main {
+    width: 100vw;
+}
+
+body {
+    background: #E6A376CC;
+
+    background-image: url('../assets/food-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+/* Nav CSS */
+nav {
+    display: flex;
+    height: 150px;
+}
+
+
+nav > section {
+    background-color: rgba(152, 163, 134, 1);
+    background-image: linear-gradient(rgba(168, 170, 56, 0.2), rgba(9, 8, 8, 0.2));
+    padding: 15px;
+    border: 5px rgba(71, 68, 65, 1) solid;
+}
+
+nav > .logo {
+    position: absolute;
+    border-radius: 30px;
+}
+
+nav > .logo > img {
+    height: 110px;
+}
+
+nav > .nav {
+    flex: 1;
+    height: 100px;
+    padding-left: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > .nav > a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav > .nav > a > div {
+    background-color: #BE8864;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > .nav > a > div > img {
+    width: 30px;
+}
+/* Main CSS */
+main {
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.content_box {
+    background-color: rgba(135, 162, 111, 1);
+    padding: 25px;
+    border-radius: 50px;
+}
